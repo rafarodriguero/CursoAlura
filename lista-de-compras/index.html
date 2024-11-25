@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Compras</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <main>
+        <img src="./img/bag.svg" alt="Sacola de compras">
+        <form>
+            <input class="input-item" id="input-item" type="text" placeholder="Digite o item que deseja adicionar"/>
+            <button class="button-item" id="adicionar-item">Salvar item</button>
+        </form>
+
+        <div class="container-lista">
+            <h2>Lista de Compras</h2>
+            <hr/>
+
+            <ul id="lista-de-compras">
+                <!--<li>
+                    <div class="item-lista-container">
+                        <div class="container-nome-compra">
+                            <div class="checkbox-container">
+                                <label for="checkbox-1">
+                                    <input type="checkbox" class="checkbox-input" id="checkbox-1"/>
+                                    <div class="checkbox-customizado checked"></div>
+                                </label>
+                            </div>
+                            
+                            <p>Ração de Gato</p>
+                        </div>
+                        <div class="container-botao">
+                            <button class="botao-acao">
+                                <img src="./img/delete.svg" alt="Deletar">
+                            </button>
+                            <button class="botao-acao">
+                                <img src="./img/edit.svg" alt="Editar">
+                            </button>
+                        </div>
+                    </div>
+                    <p class="item-lista-texto">Segunda-feira (31/01/2022) às 08:30</p>
+                </li>-->
+                <p id="mensagem-lista-vazia" style="display: block">Sua lista está vazia. Adicione itens a ela para não esquecer nada na próxima compra!</p>
+            </ul>
+
+            <h2 id="lista-comprados-titulo" style="display: none">Comprados</h2>
+            <hr id="lista-comprados-linha" style="display: none" />
+            <ul id="lista-comprados">
+
+            </ul>
+        </div>
+    </main>
+    <script src="scripts.js" type="module"></script>
+</body>
+
+</html>
